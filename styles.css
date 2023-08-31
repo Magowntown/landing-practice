@@ -95,6 +95,8 @@ body {
     padding: 15px;
 }
 
+
+
 .menuItem {
     text-decoration: none;
     color: #fff;
@@ -135,20 +137,34 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     margin: 2rem;
-    width: 100%;
+    width: 85%;
     height: 100%;
-}
-
-@media screen and (max-width: 800px) {
-    .hero-box {
-        flex-wrap: wrap;
-    }
 }
 
 .hero-text {
     text-align: left;
     padding: 2rem;
 }
+
+@media screen and (max-width: 800px) {
+    .hero-box {
+        flex-wrap: wrap;
+        width: 80%;
+    }
+
+    .hero-text {
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .hero-text button {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
+
+
 
 .hero-text h1 {
     font-size: 40px;
