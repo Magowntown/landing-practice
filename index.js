@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded" ,() => {
+document.addEventListener("DOMContentLoaded", () => {
   // Select the hamburger button
   const hamburgerButton = document.querySelector(".hamburger");
 
@@ -30,6 +30,15 @@ document.addEventListener("DOMContentLoaded" ,() => {
     } else {
       menuIcon.style.display = "none";
       closeIcon.style.display = "block";
+    }
+
+    // Toggle's display of mobile dropdown on click of menu li links
+    for (let i = 0; i < hamLinks.children.length; i++) {
+      hamLinks.children[i].addEventListener("click", () => {
+        hamLinks.style.display = "none";
+        menuIcon.style.display = "block";
+        closeIcon.style.display = "none";
+      });
     }
   });
 });
